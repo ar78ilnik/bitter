@@ -1,10 +1,16 @@
 .container {
-  width: @bp-small;
+  width: calc(@bp-small - 20px);
   margin: 0 auto;
 }
 
 @media screen and @mq-medium {
   .container {
-    width: @bp-medium;
+    width: calc(@bp-medium - 44px);
+  }
+}
+
+@media screen and @mq-xlarge {
+  .container {
+    width: calc(@bp-xlarge - 720px);
   }
 }

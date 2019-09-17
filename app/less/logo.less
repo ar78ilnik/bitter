@@ -1,9 +1,18 @@
 .logo {
   display: block;
   width: 110px;
-  height: auto;
+  height: 16px;
   font-size: 0;
   line-height: 0;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
+}
+
+@media screen and @mq-medium {
+  .logo {
+    width: 198px;
+    height: 29px;
+    background-image: url(../img/logo-tablet-desktop.png);
+    position: relative;
+  }
 }

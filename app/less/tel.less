@@ -1,4 +1,17 @@
 .tel {
   text-decoration: none;
-  line-height: @base-line-height;
+  font-family: "Montserrat";
+  font-size: 87.5%;
+  color: @header-grey;
+}
+
+@media screen and @mq-medium {
+  .tel {
+    position: relative;
+  }
+
+  .tel::after {
+    position: absolute;
+    content: url(../img/tel.png);
+  }
 }
