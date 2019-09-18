@@ -8,10 +8,24 @@
 @media screen and @mq-medium {
   .tel {
     position: relative;
+    font-size: 125%;
+    color: @header-grey;
+    padding-bottom: 20px;
+  }
+
+  .tel::before {
+    position: absolute;
+    content: url(../img/tel.png);
+    top: 0;
+    left: -25px;
   }
 
   .tel::after {
+    content: "звонок бесплатный";
     position: absolute;
-    content: url(../img/tel.png);
+    top: 20px;
+    right: 0;
+    font-size: @14px;
+    color: @tel-grey;
   }
 }
