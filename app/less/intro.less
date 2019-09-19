@@ -1,1 +1,48 @@
+.intro {
+  height: 435px;
+  background-image: url(../img/back-mobile.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  color: @intro-white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  &__sbor {
+    display: inline-block;
+    font-size: @12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 31px;
+  }
+
+  &__bitter {
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+    font-size: @30px;
+    line-height: @line-height-bitter;
+    position: relative;
+  }
+
+  &__bitter::after {
+    content: url(../img/pack-mobile.png);
+    position: absolute;
+    top: 103px;
+    left: 24%;
+  }
+
+  &__link {
+    display: block;
+    height: 60px;
+    background-color: @intro-green;
+    font-size: @12px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: @intro-white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
