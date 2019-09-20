@@ -4,7 +4,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
-  color: @intro-white;
+  color: @white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -37,12 +37,46 @@
   &__link {
     display: block;
     height: 60px;
-    background-color: @intro-green;
+    background-color: @green;
     font-size: @12px;
     letter-spacing: 1px;
     line-height: 50px;
-    color: @intro-white;
+    color: @white;
     font-weight: 700;
     text-decoration: none;
+  }
+}
+
+@media screen and @mq-medium {
+  .intro {
+    height: 540px;
+    background-image: url(../img/back-tablet.png);
+
+    &__main {
+      width: 50%;
+      margin-left: 50%;
+      margin-top: 90px;
+      text-align: left;
+    }
+
+
+    &__sbor {
+      font-size: @14px;
+    }
+
+    &__bitter {
+      font-size: @50px;
+      margin: 0;
+    }
+
+    &__bitter::after {
+      content: url(../img/pack-tablet.png);
+      top: -47px;
+      left: -220%;
+    }
+
+    &__link {
+      display: none;
+    }
   }
 }
