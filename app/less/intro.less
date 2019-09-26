@@ -46,7 +46,6 @@
       text-align: left;
     }
 
-
     &__sbor {
       font-size: @14px;
     }
@@ -64,6 +63,26 @@
 
     &__link {
       display: none;
+    }
+  }
+}
+
+@media screen and @mq-large {
+  .intro {
+    &__main {
+      margin-left: 51%;
+      margin-top: 136px;
+    }
+
+    &__bitter {
+      width: 570px;
+      font-size: @60px;
+      letter-spacing: 3px;
+    }
+
+    &__bitter::after {
+      top: -95px;
+      left: -472px;
     }
   }
 }

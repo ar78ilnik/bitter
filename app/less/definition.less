@@ -25,3 +25,41 @@
     margin-top: 20px;
   }
 }
+
+@media screen and @mq-medium {
+  .definition {
+    &__list {
+      width: 578px;
+      margin: 0 auto;
+      padding-top: 284px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__box {
+      width: 210px;
+      height: auto;
+    }
+
+    &__term {
+      font-size: @30px;
+      color: @green-def;
+      font-weight: 600;
+      position: relative;
+    }
+
+    &__term::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 25px;
+      height: 25px;
+      border: 5px solid @green-def;
+      border-radius: 50%;
+    }
+  }
+}
