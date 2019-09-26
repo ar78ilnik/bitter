@@ -1,0 +1,47 @@
+.popularity {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: @grey-header;
+
+  &__items {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 16px;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  &__item::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    border-bottom: 2px solid @green;
+    border-right: 2px solid @green;
+    transform: rotate(315deg);
+  }
+
+  &__text {
+    font-size: @16px;
+    font-weight: 700;
+  }
+
+  &__img {
+    margin-top: 9px;
+  }
+
+  &__euro {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 27px 29px 29px;
+    line-height: @base-line-height * 1.5;
+  }
+}
