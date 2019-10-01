@@ -14,7 +14,7 @@
     color: @dark-grey;
     font-weight: 400;
 
-    &_bold {
+    &_strong {
       font-weight: 800;
     }
   }
@@ -52,6 +52,57 @@
 @media screen and @mq-medium {
   .list {
     height: 1320px;
-    background: url(../img/man-tablet.jpg) no-repeat center 700px, linear-gradient(#fff 50%, @green-def 50%);
+    background: url(../img/man-tablet.jpg) no-repeat center 700px, linear-gradient(@green-light 50%, @green-def 50%);
+
+    &__items {
+      margin: 0 auto 85px 76px;
+    }
+
+    &__items_quad {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      line-height: 1.5;
+      font-size: @16px;
+
+      &_strong {
+        font-weight: 800;
+      }
+
+      &_quad {
+        width: 40%;
+
+        &:nth-child(1) {
+          order: 0;
+        }
+
+        &:nth-child(2) {
+          order: 2;
+        }
+
+        &:nth-child(3) {
+          order: 1;
+        }
+
+        &:nth-child(4) {
+          order: 3;
+        }
+      }
+
+    }
+
+    &__publi {
+      background-color: @white;
+      width: 415px;
+    }
+
+    &__text {
+      font-size: @20px;
+      ;
+    }
   }
 }
