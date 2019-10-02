@@ -12,8 +12,21 @@
   text-align: center;
 }
 
+@media screen and @mq-medium {
+  .link {
+    &_list {
+      width: 419px;
+      margin: 0 auto;
+    }
+  }
+}
+
 @media screen and @mq-large {
   .link {
     display: none;
+
+    &_list {
+      width: 145px;
+    }
   }
 }
